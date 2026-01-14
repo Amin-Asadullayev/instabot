@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@google/genai": "^1.35.0",
+    "@google/generative-ai": "^0.24.1",
+    "canvas": "^3.2.1",
+    "formdata-node": "^6.0.3",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
