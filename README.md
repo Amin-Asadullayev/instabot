@@ -1,1 +1,1 @@
-= Instagram page manager bot
+# Instagram page manager bot
