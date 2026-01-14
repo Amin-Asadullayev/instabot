@@ -1,0 +1,16 @@
+name: Daily Instagram Post
+
+   on:
+     schedule:
+       - cron: '0 12 * * *'  # 9 AM UTC daily
+     workflow_dispatch:
+
+   jobs:
+     post:
+       runs-on: ubuntu-latest
+       timeout-minutes: 2
+       
+       steps:
+         - name: Trigger Instagram Post
+           run: |
+             curl -X GET https://instabot-rho.vercel.app/api/generate
