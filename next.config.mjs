@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Turbopack configuration for Next.js 16+
   turbopack: {
     rules: {
       '*.node': {
@@ -8,8 +7,6 @@ const nextConfig = {
       },
     },
   },
-  
-  // Webpack configuration (fallback for production builds)
   webpack: (config, { isServer }) => {
     if (isServer) {
       config.externals.push('canvas');
